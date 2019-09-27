@@ -14,3 +14,4 @@ Awesome doskey commands will go here.
     openf=explorer . 
     clipf=type $* | clip 
     touch=fsutil file createnew $1 0 
+    watch30=for /l %g in () do @( $* ^& timeout /t 30 )
