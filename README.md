@@ -15,3 +15,15 @@ Awesome doskey commands will go here.
     clipf=type $* | clip 
     touch=fsutil file createnew $1 0 
     watch30=for /l %g in () do @( $* ^& timeout /t 30 )
+    myip=ipconfig | findstr IPv4
+    clipf=type $* | clip
+    myipl=curl ifconfig.ovh
+    touch=fsutil file createnew $1 0
+    np=notepad++ $*
+    ip=ipconfig | findstr IPv4
+    cp=xcopy $1 $2 /s /e
+    edithosts=notepad++ c:\Windows\System32\drivers\etc\hosts
+    ss=netstat -ano
+    ssp=netstat -ano | findstr /i $*
+    ps=tasklist
+    psid=tasklist /fi "pid eq $*"
