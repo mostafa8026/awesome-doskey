@@ -27,3 +27,4 @@ Awesome doskey commands will go here.
     ssp=netstat -ano | findstr /i $*
     ps=tasklist
     psid=tasklist /fi "pid eq $*"
+	kill=elevate taskkill /IM "$*" /F /FI "STATUS eq RUNNING"
